@@ -1,0 +1,632 @@
+﻿<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+<head>
+	<title>新闻战</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8;" />
+	
+	<link rel="stylesheet" href="css/reset-min.css" type="text/css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+
+	<script src="js/jquery-1.5.1.min.js" type="text/javascript"></script>
+	<script src="js/navigation.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<div class="page">
+	<div class="header">
+		<div class="login">
+			<form>
+				<label for="username">用户名：</label>
+				<input type="text" id="username"></input>
+				<label for="password">&nbsp;&nbsp;密码：</label>
+				<input type="password" id="password"></input>
+				<input type="submit" value="登录" id="login_submit" />
+				
+				<a href="#">注 册</a>
+				<a href="#">忘记密码</a>
+				
+				<div class="contribute"><a href="#" ><img src="images/contri.gif" alt="在线投稿" /></a></div>
+				
+			</form>
+		</div>
+	
+		<ul class="main_nav">
+			<li class="f_c"><a href="http://192.168.102.42/www/">首页</a></li>
+			<li><a href="http://192.168.102.42/www/download/">下载站</a></li>
+			<li><a href="http://192.168.102.42/www/music/">音乐站</a></li>
+			<li><a href="http://192.168.102.42/www/diary/">日记站</a></li>
+			<li><a href="http://192.168.102.248/market/">跳蚤市场</a></li>
+			<li class="l_c"><a href="http://192.168.102.41/blog/">逐级</a></li>
+		</ul>
+		
+		<img class="logo" src="images/logo.gif" alt="42NEWS"/>
+		
+		<form class="searcher">
+			<input type="text" id="searcher_bar"></input>
+			<input type="image" src="css/img/search_button.gif" value="搜索"></input>
+		</form>
+	
+		<ul class="navigation">
+			<li class="here"><a href="news.html">Home</a></li>
+			<li>
+				<a href="child_page.html">体育</a>
+				<ul class="child_nav">
+					<li><a href="child_page.html">足球</a></li>
+					<li><a href="child_page.html">世界杯</a></li>
+					<li><a href="child_page.html">篮球</a></li>
+					<li><a href="child_page.html">综合体育</a></li>
+					<li><a href="child_page.html">F1</a></li>
+					<li><a href="child_page.html">北京奥运</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="child_page2.html">娱乐</a>
+				<ul class="child_nav">
+					<li><a href="child_page2.html">八卦</a></li>
+					<li><a href="child_page2.html">九卦</a></li>
+					<li><a href="child_page2.html">十卦</a></li>
+					<li><a href="child_page2.html">十一卦螺旋连环六十四手里剑</a></li>
+					<li><a href="child_page2.html">十二卦F1</a></li>
+					<li><a href="child_page2.html">十三卦北京奥运</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="child_page.html">数码</a>
+				<ul class="child_nav">
+					<li><a href="child_page.html">足球</a></li>
+					<li><a href="child_page.html">世界杯</a></li>
+					<li><a href="child_page.html">篮球</a></li>
+					<li><a href="child_page.html">综合体育</a></li>
+					<li><a href="child_page.html">F1</a></li>
+					<li><a href="child_page.html">北京奥运</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="child_page.html">社会</a>
+				<ul class="child_nav">
+					<li><a href="child_page.html">八卦</a></li>
+					<li><a href="child_page.html">九卦</a></li>
+					<li><a href="child_page.html">十卦</a></li>
+					<li><a href="child_page.html">十一卦螺旋连环六十四手里剑</a></li>
+					<li><a href="child_page.html">十二卦F1</a></li>
+					<li><a href="child_page.html">十三卦北京奥运</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="child_page.html">文学</a>
+				<ul class="child_nav">
+					<li><a href="child_page.html">足球</a></li>
+					<li><a href="child_page.html">世界杯</a></li>
+					<li><a href="child_page.html">篮球</a></li>
+					<li><a href="child_page.html">综合体育</a></li>
+					<li><a href="child_page.html">F1</a></li>
+					<li><a href="child_page.html">北京奥运</a></li>
+				</ul>
+			</li>
+			<li><a href="child_page.html">时政</a></li>
+			<li><a href="child_page.html">职场</a></li>
+			<li><a href="child_page.html">贴图</a></li>
+			<li><a href="child_page.html">社区</a></li>
+			<li><a href="child_page.html">技术</a></li>
+			<li><a href="child_page.html">女人</a></li>
+			<li><a href="child_page.html">业界</a></li>
+			<li><a href="child_page.html">外语学习</a></li>
+			<li><a href="child_page.html">其他热点</a></li>
+			<li><a href="child_page.html">节日专题</a></li>
+			<li><a href="child_page.html">42影视</a></li>
+			<li><a href="child_page.html">热点专题</a></li>
+		</ul>
+	</div> <!-- header end -->
+	
+	<div class="container">
+		<p class="where">&nbsp;&nbsp;您现在的位置：<a href="#">首页</a></p>
+		
+		<ul class="white_area">
+			<li class="notice_li">
+				<dl>
+					<dt><img src="images/notice.gif" alt="社区公告" /></dt>
+					
+					<dd><a href="child_page/post1.html">光森电视直播平台全程直播亚…</a></dd>
+					<dd><a href="child_page/post1.html">东软校园篮球3VS3对抗赛参赛…</a></dd>
+				</dl>
+			</li>
+			
+			<li class="top_li">
+				<dl>
+					<dt><img src="images/top.gif" alt="新闻排行" /></dt>
+					
+					<dd><a href="child_page/post2.html">光森电视直播平台全程直播亚…</a></dd>
+					<dd><a href="child_page/post2.html">东软校园篮球3VS3对抗赛参赛…</a></dd>
+				</dl>
+			</li>
+			
+			<li class="pop_li">
+				<dl>
+					<dt><img src="images/pop.gif" alt="42流行语" /></dt>
+					
+					<dd><a href="child_page/post3.html">我勒个去</a></dd>
+					<dd><a href="child_page/post3.html">你猜我猜你猜不猜</a></dd>
+				</dl>
+			</li>
+			
+			<li class="stat_li">
+				<dl>
+					<dt><img src="images/stat.gif" alt="资源统计" /></dt>
+					
+					<dd class="statistic">文章总数：9495篇</dd>
+					<dd class="statistic">待审核文章：3篇</dd>
+				</dl>
+			</li>
+			
+			<li class="other_li">
+				&nbsp;
+				<a href="#">社区发帖</a>
+				&nbsp;
+				<a href="#">热门搜索</a>
+				
+				<ul class="manage">
+					<li><a href="#">添加文章</a></li>
+					<li><a href="#">添加网摘</a> </li>
+					<li><a href="#">文章投稿</a> </li>
+					<li><a href="#">审核投稿</a> </li>
+					<li><a href="#">投票投稿</a></li>
+					<li><a href="#">个人管理</a> </li>
+					<li><a href="#">列出角色</a> </li>
+					<li><a href="#">分类大纲</a> </li>
+					<li><a href="#">添加分类</a> </li>
+					<li><a href="#">删除分类</a></li>
+					<li><a href="#">修改分类</a></li>
+				</ul>
+			</li>
+		</ul>
+		
+		<div class="focus">
+			<div class="head_bar" id="focus_spec">
+				<img src="images/focus_focus.gif" alt="焦点 focus" />
+				
+				<div id="left_bar"></div>
+				<div id="right_bar"></div>
+				<!-- stereo bar -->
+			</div>
+			
+			<div class="focus_news under_focus">
+				<h3><img src="images/focus_h3.gif" alt="焦点新闻" /></h3>
+				
+				<div class="main_img"><a href="child_page/post1.html">
+						<img src="images/source/image_0001.gif" alt="焦点图片" title="潘石屹…………………………"/>
+				</a></div>
+
+				<dl>
+					<dt><a href="child_page/post1.html">潘石屹：周鸿祎是最大的创新者</a></dt>
+					<dd><a href="child_page/post1.html">11月19日，“创业家年会暨全球创业周中国站开幕式”在北京香格里拉饭店隆重举行，360董事长周鸿祎在年会上发表了主题为“微创新”的演讲。</a></dd>
+				</dl>
+				
+				<div id="focus_bottom_bg" class="focus_bottom_bg_type"></div>
+			</div>
+			
+			<div class="campus_news under_focus">
+				<h3><img src="images/campus_h3.gif" alt="校园动态" /></h3>
+				<ul>
+					<li><a href="child_page/post1.html">光森电视直播平台全程直播亚…</a></li>
+					<li><a href="child_page/post1.html">东软校园篮球3VS3对抗赛参赛…</a></li>
+					<li><a href="child_page/post1.html">42网络技术小组最终录取名单</a></li>
+					<li><a href="child_page/post1.html">SOVO阳光光棍节免费清本</a></li>
+					<li><a href="child_page/post1.html">信管系第二届PS设计大赛</a></li>
+					<li><a href="child_page/post1.html">计算机系10届拔河比赛即将开…</a></li>
+					<li><a href="child_page/post1.html">SOVO视. 平面数字影像设计公…</a></li>
+					<li><a href="child_page/post1.html">42第二次面试通过名单SOVO </a></li>
+					<li><a href="child_page/post1.html">创世传媒设计公司招聘纳新公…</a></li>
+					<li><a href="child_page/post1.html">信管系迎新杯篮球赛火热进行…</a></li>
+					<li><a href="child_page/post1.html">【通知】Adobe课程表</a></li>
+					<li><a href="child_page/post1.html">大学生文化素质教育活动月“…</a></li>
+					<li><a href="child_page/post1.html">大连惠普金牌服务招聘信息开…</a></li>
+				</ul>
+				
+				<div class="hot_img">
+					<h3><img src="images/top_h3.gif" alt="热点专题" /></h3>
+					<a href="child_page/post1.html"><img id="hot_img" src="images/hot_img.gif" alt="热点图片" /></a>
+					
+					<dl>
+						<dt><a href="child_page/post1.html">difer darlid </a></dt>
+						<dd>dfi drf  difedfm e ed fieot aovce dfie.</dd>
+					</dl>
+				</div>
+				
+				<div id="campus_bottom_bg" class="focus_bottom_bg_type"></div>
+			</div>
+			
+			<div class="new_news under_focus">
+				<h3><img src="images/new_h3.gif" alt="新闻动态" /></h3>
+				<ul>
+					<li>
+							<ul class="new_content">
+							<img class="new_img" src="images/source/pad0.gif" alt="" />
+							<li><b>[国内]</b><a href="child_page/post1.html" class="more_blank">Read more</a></li>
+							<li><a href="child_page/post1.html" alt="">国民党今在台北举行催票大游行 预计3万人</a></li>
+							<li><a href="child_page/post1.html" alt="">工作了。。累。。。</a></li>
+							<li><a href="child_page/post1.html" alt="">我又丢围巾了，衰呀~~</a></li>
+						</ul>
+					</li>
+					
+					<li>
+						<ul class="new_content">
+							<img class="new_img" src="images/source/pad1.gif" alt="" />
+							<li><b>[手机]</b><a href="child_page/post1.html" class="more_blank">Read more</a></li>
+							<li><a href="child_page/post1.html" alt="">不容错过的精品 iPhone十款最新游戏大作</a></li>
+							<li><a href="child_page/post1.html" alt="">苹果已完成第二代iPad设计 最早明年2月上市</a></li>
+							<li><a href="child_page/post1.html" alt="">总有一部电影让你感动如斯...</a></li>
+						</ul>
+					</li>
+					
+					<li>
+						<ul class="new_content">
+							<img class="new_img" src="images/source/pad2.gif" alt="" />
+							<li><b>[足球]</b><a href="child_page/post1.html" class="more_blank">Read more</a></li>
+							<li><a href="child_page/post1.html" alt="">德甲-蒿俊闵缺席劳尔帽子戏法 沙尔克4-0</a></li>
+							<li><a href="child_page/post1.html" alt="">西甲-C罗大3元反超梅西 皇马5-1取7连胜领跑</a></li>
+							<li><a href="child_page/post1.html" alt="">C罗竟主动放弃大四喜 挑衅巴萨：有种进皇马</a></li>
+						</ul>
+					</li>
+					
+					<li>
+						<ul class="new_content">
+							<img class="new_img" src="images/source/pad3.gif" alt="" />
+							<li><b>[技术]</b><a href="child_page/post1.html" class="more_blank">Read more</a></li>
+							<li><a href="child_page/post1.html" alt="">西甲-梅西帽子戏法破百 巴萨8-0取客场6连胜</a></li>
+							<li><a href="child_page/post1.html" alt="">英超-鲁尼复出妖星破门 曼联2-0追平切尔西</a></li>
+							<li><a href="child_page/post1.html" alt="">英超-铁卫复出德罗巴中柱 切尔西0-1两连败</a></li>
+						</ul>
+					</li>
+				</ul>
+
+				<div id="new_bottom_bg" class="focus_bottom_bg_type"></div> <!-- bottom_bg -->
+			</div>
+		</div>
+
+		
+		<div class="focus">
+			<div class="head_bar">
+				<img src="images/complex_focus.gif" alt="综合 focus" />
+
+				<div id="left_bar"></div>
+				<div id="right_bar"></div>
+				<!-- stereo bar -->
+			</div>
+			
+			<div class="pic_div h3_more">
+				<h3>精彩贴图<a href="child_page/post1.html">更多</a></h3>
+				
+				<ul>
+					<li>
+						<a href="child_page/post1.html"><img src="images/source/pic001.gif" alt="" /></a>
+						<p><a href="child_page/post1.html">中南海看潮</a></p>
+					</li>
+					
+					<li>
+						<a href="child_page/post1.html"><img src="images/source/pic002.gif" alt="" /></a>
+						<p><a href="child_page/post1.html">月牙泉边嘉峪关上</a></p>
+					</li>
+					
+					<li>
+						<a href="child_page/post1.html"><img src="images/source/pic003.gif" alt="" /></a>
+						<p><a href="child_page/post1.html">温岭石文化之旅</a></p>
+					</li>
+					
+					<li>
+						<a href="child_page/post1.html"><img src="images/source/pic004.gif" alt="" /></a>
+						<p><a href="child_page/post1.html">2010完美杭州</a></p>
+					</li>
+					
+					<li>
+						<a href="child_page/post1.html"><img src="images/source/pic005.gif" alt="" /></a>
+						<p><a href="child_page/post1.html">折腾长假不折腾旅行</a></p>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="enjoy_div h3_more">
+				<h3>娱乐<a href="child_page/post1.html">更多</a></h3>
+				
+				
+				<ul>
+					<li><a href="child_page/post1.html">个汉字十七个汉字十七个汉字十七十七</a></li>
+					<li><a href="child_page/post1.html">十七个汉字十七个汉字十七十七个汉字</a></li>
+					<li><a href="child_page/post1.html">汉字十七个汉字十七十七个汉字十七个</a></li>
+					<li><a href="child_page/post1.html">字十七个汉字十七十七个汉字十七个汉</a></li>
+					<li><a href="child_page/post1.html">十七个字十七汉字十七个汉字十七个汉</a></li>
+				</ul>
+			</div>
+			
+			<div class="comm_div h3_more">
+				<h3>社区 <a href="child_page/post1.html">更多</a></h3>
+				
+				
+				<ul>
+					<li><a href="child_page/post1.html">[谈天说地]工作了。。累。。。</a></li>
+					<li><a href="child_page/post1.html">[失物招领]我又丢围巾了，衰呀~~</a></li>
+					<li><a href="child_page/post1.html">[失物招领]寻N85手机！在A5二楼……</a></li>
+					<li><a href="child_page/post1.html">[谈天说地]如何购买珍稀葡萄酒~~~</a></li>
+					<li><a href="child_page/post1.html">[谈天说地]大连软景E居今晨失火，……</a></li>
+					<li><a href="child_page/post1.html">[谈天说地]俄罗斯方块当椅子~~~</a></li>
+					<li><a href="child_page/post1.html">[谈天说地]我爱草鞋~~~</a></li>
+					<li><a href="child_page/post1.html">[谈天说地]疯狂的浴巾。。。</a></li>
+					<li><a href="child_page/post1.html">[谈天说地]墙壁上的旧抽屉 赋予空间……</a></li>
+					<li><a href="child_page/post1.html">[心情]大学念到这里感觉还失败[失物……</a></li>
+					<li><a href="child_page/post1.html">【求认领】银行卡</a></li>
+					<li><a href="child_page/post1.html">[失物招领]the body shop滋润乳</a></li>
+					<li><a href="child_page/post1.html">[谈天说地]疯狂的浴巾。。。</a></li>
+					<li><a href="child_page/post1.html">[谈天说地]墙壁上的旧抽屉 赋予空间……</a></li>
+				</ul>
+			</div>
+			
+			<div class="right_div">
+				<div class="grid_size h3_more">
+					<h3>社会<a href="child_page/post1.html">更多</a></h3>
+					
+					
+					<ul>
+						<li><a href="child_page/post1.html">2010杭州文博会下月开幕</a></li>
+						<li><a href="child_page/post1.html">中秋夜，赏月或改赏雨</a></li>
+						<li><a href="child_page/post1.html">三大历史街区，国庆开街</a></li>
+					<ul>
+				</div>
+				
+				<div class="grid_size h3_more">
+					<h3>数码<a href="child_page/post1.html">更多</a></h3>
+					
+					
+					<ul>
+						<li><a href="child_page/post1.html">2010杭州文博会下月开幕</a></li>
+						<li><a href="child_page/post1.html">中秋夜，赏月或改赏雨</a></li>
+						<li><a href="child_page/post1.html">三大历史街区，国庆开街</a></li>
+					<ul>
+				</div>
+				
+				<div class="grid_img">
+					<a href="child_page/post1.html"><img src="images/source/grid_img001.gif" alt="" /></a>
+				</div>
+				
+				<div class="grid_size h3_more grid_end">
+					<h3>时政<a href="child_page/post1.html">更多</a></h3>
+					
+					
+					<ul>
+						<li><a href="child_page/post1.html">2010杭州文博会下月开幕</a></li>
+						<li><a href="child_page/post1.html">中秋夜，赏月或改赏雨</a></li>
+						<li><a href="child_page/post1.html">三大历史街区，国庆开街</a></li>
+					<ul>
+				</div>
+				
+				<div class="grid_size h3_more grid_end">
+					<h3>业界<a href="child_page/post1.html">更多</a></h3>
+					
+					<ul>
+						<li><a href="child_page/post1.html">2010杭州文博会下月开幕</a></li>
+						<li><a href="child_page/post1.html">中秋夜，赏月或改赏雨</a></li>
+						<li><a href="child_page/post1.html">三大历史街区，国庆开街</a></li>
+					<ul>
+				</div>
+				
+				<div class="grid_img grid_end">
+					<a href="child_page/post1.html"><img src="images/source/grid_img002.gif" alt="" /></a>
+				</div>
+
+				<div class="grid_size grey_bg h3_more">
+					<h3>技术<a href="child_page/post1.html">更多</a></h3>
+					
+					<ul>
+						<li><a href="child_page/post1.html">2010杭州文博会下月开幕</a></li>
+						<li><a href="child_page/post1.html">中秋夜，赏月或改赏雨</a></li>
+						<li><a href="child_page/post1.html">三大历史街区，国庆开街</a></li>
+					<ul>
+				</div>
+
+				<div class="grid_size grey_bg h3_more">
+					<h3>职场<a href="child_page/post1.html">更多</a></h3>
+					
+					<ul>
+						<li><a href="child_page/post1.html">2010杭州文博会下月开幕</a></li>
+						<li><a href="child_page/post1.html">中秋夜，赏月或改赏雨</a></li>
+						<li><a href="child_page/post1.html">三大历史街区，国庆开街</a></li>
+					<ul>
+				</div>
+
+				<div class=" grid_size spec_size grey_bg h3_more">
+					<h3>外语学习<a href="child_page/post1.html">更多</a></h3>
+					
+					<ul>
+						<li><a href="child_page/post1.html">2010杭州文博会下月开幕</a></li>
+						<li><a href="child_page/post1.html">中秋夜，赏月或改赏雨</a></li>
+						<li><a href="child_page/post1.html">三大历史街区，国庆开街</a></li>
+					<ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="focus">
+			<div class="head_bar">
+				<img src="images/enjoy_focus.gif" alt="娱乐 focus" />
+				
+				<div id="left_bar"></div>
+				<div id="right_bar"></div>
+				<!-- stereo bar -->
+			</div>
+			
+			<div class="pic_div h3_more">
+				<h3>精彩贴图<a href="child_page/post1.html">更多</a></h3>
+
+				<ul>
+					<li>
+						<a href="child_page/post1.html"><img src="images/source/pic001.gif" alt="" /></a>
+						<p><a href="child_page/post1.html">中南海看潮</a></p>
+					</li>
+					
+					<li>
+						<a href="child_page/post1.html"><img src="images/source/pic002.gif" alt="" /></a>
+						<p><a href="child_page/post1.html">月牙泉边嘉峪关上</a></p>
+					</li>
+					
+					<li>
+						<a href="child_page/post1.html"><img src="images/source/pic003.gif" alt="" /></a>
+						<p><a href="child_page/post1.html">温岭石文化之旅</a></p>
+					</li>
+					
+					<li>
+						<a href="child_page/post1.html"><img src="images/source/pic004.gif" alt="" /></a>
+						<p><a href="child_page/post1.html">2010完美杭州</a></p>
+					</li>
+					
+					<li>
+						<a href="child_page/post1.html"><img src="images/source/pic005.gif" alt="" /></a>
+						<p><a href="child_page/post1.html">折腾长假不折腾旅行</a></p>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="enjoy_div h3_more">
+				<h3>娱乐<a href="child_page/post1.html">更多</a></h3>
+				
+				
+				<ul>
+					<li><a href="child_page/post1.html">十七个汉字十七个汉字十七个汉字十七</a></li>
+					<li><a href="child_page/post1.html">十七个汉字十七个汉字十七个汉字十七</a></li>
+					<li><a href="child_page/post1.html">十七个汉字十七个汉字十七个汉字十七</a></li>
+					<li><a href="child_page/post1.html">十七个汉字十七个汉字十七个汉字十七</a></li>
+					<li><a href="child_page/post1.html">十七个汉字十七个汉字十七个汉字十七</a></li>
+				</ul>
+			</div>
+			
+					
+			<div class="comm_div h3_more">
+				<h3>社区<a href="child_page/post1.html">更多</a></h3>
+				
+				<ul>
+					<li><a href="child_page/post1.html">[谈天说地]工作了。。累。。。</a></li>
+					<li><a href="child_page/post1.html">[失物招领]我又丢围巾了，衰呀~~</a></li>
+					<li><a href="child_page/post1.html">[失物招领]寻N85手机！在A5二楼……</a></li>
+					<li><a href="child_page/post1.html">[谈天说地]如何购买珍稀葡萄酒~~~</a></li>
+					<li><a href="child_page/post1.html">[谈天说地]大连软景E居今晨失火，……</a></li>
+					<li><a href="child_page/post1.html">[谈天说地]俄罗斯方块当椅子~~~</a></li>
+					<li><a href="child_page/post1.html">[谈天说地]我爱草鞋~~~</a></li>
+					<li><a href="child_page/post1.html">[谈天说地]疯狂的浴巾。。。</a></li>
+					<li><a href="child_page/post1.html">[谈天说地]墙壁上的旧抽屉 赋予空间……</a></li>
+					<li><a href="child_page/post1.html">[心情]大学念到这里感觉还失败[失物……</a></li>
+					<li><a href="child_page/post1.html">【求认领】银行卡</a></li>
+					<li><a href="child_page/post1.html">[失物招领]the body shop滋润乳</a></li>
+					<li><a href="child_page/post1.html">[谈天说地]疯狂的浴巾。。。</a></li>
+					<li><a href="child_page/post1.html">[谈天说地]墙壁上的旧抽屉 赋予空间……</a></li>
+				</ul>
+			</div>
+			
+			<div class="right_div">
+				<div class="grid_size h3_more">
+					<h3>社会<a href="child_page/post1.html">更多</a></h3>
+					
+					<ul>
+						<li><a href="child_page/post1.html">2010杭州文博会下月开幕</a></li>
+						<li><a href="child_page/post1.html">中秋夜，赏月或改赏雨</a></li>
+						<li><a href="child_page/post1.html">三大历史街区，国庆开街</a></li>
+					<ul>
+				</div>
+				
+				<div class="grid_size h3_more">
+					<h3>社会<a href="child_page/post1.html">更多</a></h3>
+					
+					<ul>
+						<li><a href="child_page/post1.html">2010杭州文博会下月开幕</a></li>
+						<li><a href="child_page/post1.html">中秋夜，赏月或改赏雨</a></li>
+						<li><a href="child_page/post1.html">三大历史街区，国庆开街</a></li>
+					<ul>
+				</div>
+				
+				<div class="grid_size h3_more spec_size">
+					<h3>社会<a href="child_page/post1.html">更多</a></h3>
+					
+					<ul>
+						<li><a href="child_page/post1.html">2010杭州文博会下月开幕</a></li>
+						<li><a href="child_page/post1.html">中秋夜，赏月或改赏雨</a></li>
+						<li><a href="child_page/post1.html">三大历史街区，国庆开街</a></li>
+					</ul>
+				</div>
+				
+				<div class="left_grid_div">
+					<div class="grid_size  grid_end h3_more">
+						<h3>社会<a href="child_page/post1.html">更多</a></h3>
+						
+						<ul>
+							<li><a href="child_page/post1.html">2010杭州文博会下月开幕</a></li>
+							<li><a href="child_page/post1.html">中秋夜，赏月或改赏雨</a></li>
+							<li><a href="child_page/post1.html">三大历史街区，国庆开街</a></li>
+						<ul>
+					</div>
+
+					<div class="grid_size grey_bg h3_more">
+						<h3>社会<a href="child_page/post1.html">更多</a></h3>
+						
+						<ul>
+							<li><a href="child_page/post1.html">2010杭州文博会下月开幕</a></li>
+							<li><a href="child_page/post1.html">中秋夜，赏月或改赏雨</a></li>
+							<li><a href="child_page/post1.html">三大历史街区，国庆开街</a></li>
+						<ul>
+					</div>
+				</div>
+				
+				<div class="right_grid_div">
+					<ul>
+						<li>
+							<a href="child_page/post1.html"><img src="images/source/right_grid_img001.gif" alt="" /></a>
+							<a href="child_page/post1.html">天使是个老太太</a>
+						</li>
+						
+						<li>
+							<a href="child_page/post1.html"><img src="images/source/right_grid_img002.gif" alt="" /></a>
+							<a href="child_page/post1.html">这样子过一生</a>
+						</li>
+						
+						<li>
+							<a href="child_page/post1.html"><img src="images/source/right_grid_img001.gif" alt="" /></a>
+							<a href="child_page/post1.html">有趣的玩具木偶</a>
+						</li>
+						
+						<li>
+							<a href="child_page/post1.html"><img src="images/source/right_grid_img002.gif" alt="" /></a>
+							<a href="child_page/post1.html">最美丽的月球</a>
+						</li>
+						
+						<li>
+							<a href="child_page/post1.html"><img src="images/source/right_grid_img003.gif" alt="" /></a>
+							<a href="child_page/post1.html">天使是个老太太</a>
+						</li>
+						
+						<li>
+							<a href="child_page/post1.html"><img src="images/source/right_grid_img004.gif" alt="" /></a>
+							<a href="child_page/post1.html">这样子过一生</a>
+						</li>
+						
+						<li>
+							<a href="child_page/post1.html"><img src="images/source/right_grid_img003.gif" alt="" /></a>
+							<a href="child_page/post1.html">有趣的玩具木偶</a>
+						</li>
+						
+						<li>
+							<a href="child_page/post1.html"><img src="images/source/right_grid_img004.gif" alt="" /></a>
+							<a href="child_page/post1.html">最美丽的月球</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="footer">
+		<p>Copyright &copy; 2010NetEndless All Rights Reserved</p>
+		<p>&copy;版权所有 网络中心·网络技术小组 </p>
+	</div>
+</div>
+
+</body>
+
+</html>
